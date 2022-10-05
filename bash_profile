@@ -3,7 +3,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(ssh-agent -s)"
 
 ssh-add ~/.ssh/id_rsa
-ssh-add ~/.ssh/id_rsa_config_repo
 
 HOST_NAME=laendrun
 
@@ -48,6 +47,16 @@ function mkcd()
 # Aliases
 # -------
 alias o="open ." # Open the current directory in Finder
+alias c="code ." # Open the current directory in VSCode
+
+# -----------
+# Git Aliases
+# -----------
+alias gs="git status"
+alias ga="git add"
+alias gcm="git commit -m"
+alias gps="git push"
+alias gpl="git pull"
 
 # ----------
 # 42 Aliases
